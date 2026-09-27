@@ -7,10 +7,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { PlanProvider } from "@/lib/PlanContext";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "FitLog — Workout Library",
-  description:
-    "FitLog is a dark, no-nonsense gym companion: pick a lift, lock it into today's plan, and watch the week's work add up.",
+  description: "A dark, no-nonsense gym companion to plan and track your workouts.",
 };
 
 export default function RootLayout({
