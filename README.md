@@ -19,7 +19,8 @@ FitLog is a dark, no-nonsense gym companion built with Next.js. Browse a library
 4. **Sort & Manage** — Sort your plan by Duration, Calories, or Rating; mark workouts as done or remove them, all with toast confirmations.
 5. **Persistent State** — Your plan and saved list are stored in localStorage, so your progress survives a page reload. A 5-lift daily cap keeps today's plan focused.
 
-
+   ## Live Demo
+   [Live Site](https://fit-2zfarlyq8-khan-orbit.vercel.app)
 
 
 
