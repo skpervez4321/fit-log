@@ -21,7 +21,7 @@ export default function Hero() {
           </p>
           <Link
             href="#library"
-            className={`${oswald.className} mt-8 inline-flex items-center gap-2 rounded-full bg-[#c2f800] px-6 py-2.5 text-[13px] font-bold uppercase tracking-[0.5px] text-black hover:bg-[#a8dd00]`}
+            className={`${oswald.className} mt-8 inline-flex items-center gap-2 rounded-full bg-[#c2f800] px-6 py-2.5 text-[13px] font-bold uppercase tracking-[0.5px] text-black hover:scale-105 transition-transform duration-200`}
           >
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path
