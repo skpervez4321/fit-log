@@ -3,9 +3,11 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { oswald } from "@/lib/fonts";
+import { usePlan } from "@/lib/PlanContext";
 
 export default function Navbar() {
   const pathname = usePathname();
+  const { plan, saved } = usePlan();
   const isWorkouts = pathname === "/";
   const isMyPlan = pathname === "/my-plan";
 
@@ -52,13 +54,13 @@ export default function Navbar() {
           <div className="flex items-center gap-2">
             <span className="text-[12px] font-medium text-[#d1d5db]">Plan</span>
             <span className="flex size-5 items-center justify-center rounded-full bg-[#c2f800] text-[11px] font-bold text-black">
-              0
+              {plan.length}
             </span>
           </div>
           <div className="flex items-center gap-2">
             <span className="text-[12px] font-medium text-[#9ca3af]">Saved</span>
             <span className="flex size-5 items-center justify-center rounded-full border border-[#2d313b] text-[11px] font-medium text-[#d1d5db]">
-              0
+              {saved.length}
             </span>
           </div>
         </Link>
